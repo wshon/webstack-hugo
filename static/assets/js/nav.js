@@ -326,6 +326,10 @@ function trigger_resizable()
 			var bgcolor = attrDefault($this, 'bgcolor', 'white') || 'white';
 			$this.attr('style', `background: ${bgcolor};`);
 		});
+		// lazyload img
+		jQuery(function($){
+			$("img.lazy").lazyload();
+		});
 	});
 })(jQuery, window);
 
